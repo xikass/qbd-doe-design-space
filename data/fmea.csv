@@ -1,0 +1,5 @@
+factor,role,failure_mode,severity,occurrence,detection,rpn,action
+Carbomer 974P % w/w,Primary gelling & bioadhesive matrix polymer,Viscosity collapse (<30k cP) or excessive rigidity (>60k cP) impairing mucosal flow,5,4,4,80,Selected for DoE (Factor A: 0.8% - 1.6% w/w)
+NaOH : Carbomer Ratio (w/w),Polymer neutralizing agent,Under-neutralization causes acidity and incomplete uncoiling; excess causes counter-ion shielding,5,4,4,80,Selected for DoE (Factor B: 0.30 - 0.50 w/w)
+Mixing Speed (rpm),Dispersion shear rate,Air entrapment at high rpm or incomplete polymer hydration at low rpm,3,2,2,12,Fixed control at 800 rpm (sufficient vortex without vortex aeration)
+Glycerol % w/w,Humectant & plasticizer,Phase syneresis or tackiness deviation,3,2,2,12,Fixed control at 20.0% w/w (validated in pre-formulation screening)

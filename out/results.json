@@ -1,0 +1,283 @@
+{
+  "case_study": "Model Oral Gel (500 g Batch) QbD Design Space",
+  "cqas": {
+    "apparent_viscosity_cp": {
+      "lower_limit": 30000.0,
+      "upper_limit": 60000.0,
+      "target": 45000.0
+    },
+    "ph": {
+      "lower_limit": 6.0,
+      "upper_limit": 7.5,
+      "target": 6.8
+    }
+  },
+  "factors": {
+    "A_carbomer_974p_pct": {
+      "min": 0.8,
+      "center": 1.2,
+      "max": 1.6,
+      "unit": "% w/w"
+    },
+    "B_naoh_ratio": {
+      "min": 0.3,
+      "center": 0.4,
+      "max": 0.5,
+      "unit": "w/w"
+    }
+  },
+  "fixed_process_controls": {
+    "glycerol_pct": 20.0,
+    "mixing_speed_rpm": 800,
+    "temperature_celsius": 25.0
+  },
+  "coefficients": {
+    "viscosity": {
+      "Intercept": -77101.7438596189,
+      "A": 47308.83771925792,
+      "B": 310418.16228076816,
+      "A*B": 44500.62500005377,
+      "A^2": -10922.467105250806,
+      "B^2": -401569.4736842811
+    },
+    "ph": {
+      "Intercept": -0.14263157895038603,
+      "A": 0.8094298245541722,
+      "B": 27.819736842146085,
+      "A*B": -1.0624999999954445,
+      "A^2": -0.3667763157867512,
+      "B^2": -25.868421052706253
+    }
+  },
+  "r2": {
+    "viscosity": 0.9999,
+    "ph": 0.9973
+  },
+  "adj_r2": {
+    "viscosity": 0.9998,
+    "ph": 0.9945
+  },
+  "anova_stats": {
+    "viscosity": [
+      {
+        "Source": "Model",
+        "DF": 5,
+        "SS": 1636209341.5778427,
+        "MS": 327241868.31556857,
+        "F_value": 8635.95380325151,
+        "p_value": 7.835080533856089e-10
+      },
+      {
+        "Source": "  Linear (A, B)",
+        "DF": 2,
+        "SS": 1561018871.0933323,
+        "MS": 780509435.5466661,
+        "F_value": 20597.741551465908,
+        "p_value": 1.622442221790475e-10
+      },
+      {
+        "Source": "  Interaction (A*B)",
+        "DF": 1,
+        "SS": 12673956.002620459,
+        "MS": 12673956.002620459,
+        "F_value": 334.4672828891354,
+        "p_value": 8.986846520153447e-06
+      },
+      {
+        "Source": "  Quadratic (A^2, B^2)",
+        "DF": 2,
+        "SS": 62516514.48188996,
+        "MS": 31258257.24094498,
+        "F_value": 824.9093152183003,
+        "p_value": 5.018212023684513e-07
+      },
+      {
+        "Source": "Residual Error",
+        "DF": 5,
+        "SS": 189464.80942982767,
+        "MS": 37892.96188596553,
+        "F_value": NaN,
+        "p_value": NaN
+      },
+      {
+        "Source": "  Lack of Fit",
+        "DF": 3,
+        "SS": 100508.42942982762,
+        "MS": 33502.80980994254,
+        "F_value": 0.7532413034330426,
+        "p_value": 0.6136233311278434
+      },
+      {
+        "Source": "  Pure Error",
+        "DF": 2,
+        "SS": 88956.38000000005,
+        "MS": 44478.190000000024,
+        "F_value": NaN,
+        "p_value": NaN
+      },
+      {
+        "Source": "Total",
+        "DF": 10,
+        "SS": 1636398806.3872726,
+        "MS": NaN,
+        "F_value": NaN,
+        "p_value": NaN
+      }
+    ],
+    "ph": [
+      {
+        "Source": "Model",
+        "DF": 5,
+        "SS": 2.5105672647527895,
+        "MS": 0.5021134529505579,
+        "F_value": 364.52228005071413,
+        "p_value": 2.120508379122852e-06
+      },
+      {
+        "Source": "  Linear (A, B)",
+        "DF": 2,
+        "SS": 2.2893666666666284,
+        "MS": 1.1446833333333142,
+        "F_value": 831.0125453734822,
+        "p_value": 4.926853735766714e-07
+      },
+      {
+        "Source": "  Interaction (A*B)",
+        "DF": 1,
+        "SS": 0.007224999999889903,
+        "MS": 0.007224999999889903,
+        "F_value": 5.245176080923706,
+        "p_value": 0.0706286188684611
+      },
+      {
+        "Source": "  Quadratic (A^2, B^2)",
+        "DF": 2,
+        "SS": 0.2139755980862712,
+        "MS": 0.1069877990431356,
+        "F_value": 77.67056671284129,
+        "p_value": 0.00017171674112804157
+      },
+      {
+        "Source": "Residual Error",
+        "DF": 5,
+        "SS": 0.00688728070175438,
+        "MS": 0.001377456140350876,
+        "F_value": NaN,
+        "p_value": NaN
+      },
+      {
+        "Source": "  Lack of Fit",
+        "DF": 3,
+        "SS": 0.0040206140350876815,
+        "MS": 0.0013402046783625606,
+        "F_value": 0.9350265197878226,
+        "p_value": 0.5539670928715971
+      },
+      {
+        "Source": "  Pure Error",
+        "DF": 2,
+        "SS": 0.0028666666666666983,
+        "MS": 0.0014333333333333492,
+        "F_value": NaN,
+        "p_value": NaN
+      },
+      {
+        "Source": "Total",
+        "DF": 10,
+        "SS": 2.517454545454544,
+        "MS": NaN,
+        "F_value": NaN,
+        "p_value": NaN
+      }
+    ]
+  },
+  "lack_of_fit_p": {
+    "viscosity": 0.6136,
+    "ph": 0.554
+  },
+  "feasible_area_pct": 83.78,
+  "recommended_point": {
+    "recommended_A": 1.2,
+    "recommended_B": 0.396,
+    "predicted_viscosity": 45040.3,
+    "predicted_ph": 6.76,
+    "min_normalized_margin": 0.4962,
+    "viscosity_margin_normalized": 0.4987,
+    "ph_margin_normalized": 0.4962
+  },
+  "confirmation_run": {
+    "confirmation_factors": {
+      "Carbomer_pct": 1.2,
+      "NaOH_ratio": 0.396
+    },
+    "viscosity_cp": {
+      "predicted": 45040.3,
+      "observed": 45567.2,
+      "se_prediction": 218.8,
+      "pi_95_lower": 44477.9,
+      "pi_95_upper": 45602.6,
+      "spec_limits": [
+        30000.0,
+        60000.0
+      ],
+      "in_prediction_interval": true,
+      "in_specification": true
+    },
+    "ph": {
+      "predicted": 6.76,
+      "observed": 6.78,
+      "se_prediction": 0.042,
+      "pi_95_lower": 6.65,
+      "pi_95_upper": 6.86,
+      "spec_limits": [
+        6.0,
+        7.5
+      ],
+      "in_prediction_interval": true,
+      "in_specification": true
+    },
+    "confirmation_status": "PASS"
+  },
+  "fmea_ranking": [
+    {
+      "factor": "Carbomer 974P % w/w",
+      "role": "Primary gelling & bioadhesive matrix polymer",
+      "failure_mode": "Viscosity collapse (<30k cP) or excessive rigidity (>60k cP) impairing mucosal flow",
+      "severity": 5,
+      "occurrence": 4,
+      "detection": 4,
+      "rpn": 80,
+      "action": "Selected for DoE (Factor A: 0.8% - 1.6% w/w)"
+    },
+    {
+      "factor": "NaOH : Carbomer Ratio (w/w)",
+      "role": "Polymer neutralizing agent",
+      "failure_mode": "Under-neutralization causes acidity and incomplete uncoiling; excess causes counter-ion shielding",
+      "severity": 5,
+      "occurrence": 4,
+      "detection": 4,
+      "rpn": 80,
+      "action": "Selected for DoE (Factor B: 0.30 - 0.50 w/w)"
+    },
+    {
+      "factor": "Mixing Speed (rpm)",
+      "role": "Dispersion shear rate",
+      "failure_mode": "Air entrapment at high rpm or incomplete polymer hydration at low rpm",
+      "severity": 3,
+      "occurrence": 2,
+      "detection": 2,
+      "rpn": 12,
+      "action": "Fixed control at 800 rpm (sufficient vortex without vortex aeration)"
+    },
+    {
+      "factor": "Glycerol % w/w",
+      "role": "Humectant & plasticizer",
+      "failure_mode": "Phase syneresis or tackiness deviation",
+      "severity": 3,
+      "occurrence": 2,
+      "detection": 2,
+      "rpn": 12,
+      "action": "Fixed control at 20.0% w/w (validated in pre-formulation screening)"
+    }
+  ]
+}

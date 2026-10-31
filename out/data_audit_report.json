@@ -1,0 +1,29 @@
+{
+  "raw_record_count": 13,
+  "clean_record_count": 11,
+  "anomalies_detected": {
+    "incomplete_records_null_response": 1,
+    "duplicate_records": 1
+  },
+  "flagged_null_records": [
+    {
+      "run_id": 13,
+      "A": 1.2,
+      "B": 0.4,
+      "run_type": "center",
+      "viscosity": NaN,
+      "ph": 6.8
+    }
+  ],
+  "flagged_duplicate_records": [
+    {
+      "run_id": 12,
+      "A": 1.2,
+      "B": 0.4,
+      "run_type": "center",
+      "viscosity": 45106.3,
+      "ph": 6.76
+    }
+  ],
+  "audit_disposition": "Rejected invalid artifacts; preserved standard 3x3 full factorial + 3 center replicates (11 runs total)."
+}
