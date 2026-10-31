@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://www.python.org/)
 [![ICH Q8(R2)](https://img.shields.io/badge/Regulatory-ICH%20Q8%20(R2)%20%7C%20ICH%20Q9-orange.svg)](https://database.ich.org/sites/default/files/Q8_R2_Guideline.pdf)
-[![Statistics: ANOVA](https://img.shields.io/badge/Statistics-ANOVA-ff6f00.svg)](#)
+[![Domain: R&D](https://img.shields.io/badge/Domain-R%26D-0075ca.svg)](#)
 
 > **Headline Result:** A 3×3 full factorial response surface with 3 center-point replicates ($n=11$) established a multi-attribute ICH Q8 design space covering **83.78%** of the factor domain. Ordinary least squares (OLS) regression demonstrated strong predictive fit for Apparent Viscosity ($R^2 = 0.9999$, Lack-of-Fit $p = 0.6136$) and pH ($R^2 = 0.9973$, Lack-of-Fit $p = 0.5540$). A robust operating setpoint at **1.20% w/w Carbomer 974P** and **0.40 w/w NaOH:Carbomer ratio** provided a **49.62% safety margin** to specification boundaries and was validated via an independent confirmation run meeting both 95% prediction intervals.
 
